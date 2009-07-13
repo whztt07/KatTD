@@ -80,6 +80,7 @@ INT WINAPI WinMain( HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT )
 
 		main_listener = new MainFrameListener(mgr, root->getAutoCreatedWindow(), cam, keyboard);
 		root->addFrameListener(main_listener);
+		WindowEventUtilities::addWindowEventListener(root->getAutoCreatedWindow(), main_listener);
 		root->startRendering();
 	} catch( Ogre::Exception& e )
 	{
