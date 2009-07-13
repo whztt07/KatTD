@@ -23,10 +23,10 @@ LGPL like the rest of the OGRE engine.
 
 #include "ExampleApplication.h"
 #if OGRE_PLATFORM == OGRE_PLATFORM_WIN32
-#include "../res/resource.h"
+
 #endif
 
-#include "MainFrameListener.h"
+
 
 
 class KatTDApp : public ExampleApplication
